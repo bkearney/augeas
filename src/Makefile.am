@@ -56,6 +56,6 @@ internal.h: datadir.h
 
 FORCE-datadir.h: Makefile
 	echo '#define DATADIR "$(datadir)"' > datadir.h1
-	$(top_srcdir)/build/aux/move-if-change datadir.h1 datadir.h
+	$(top_srcdir)/build/axlry/move-if-change datadir.h1 datadir.h
 
 datadir.h: FORCE-datadir.h
